@@ -86,9 +86,9 @@ const Calculo = ({ resultado, setResultado }) => {
 
         <div className={styles.container}>
             <label for="peso">Peso (kg)</label>
-            <input type='number' autoComplete='off' id="peso" value={peso} onChange={recebePeso} placeholder="Ex: 74" />
+            <input autoComplete='off' id="peso" value={peso} onChange={recebePeso} placeholder="Ex: 74" />
             <label for="altura">Altura (m)</label>
-            <input type='number' autoComplete='off' id="altura" value={altura} onChange={recebeAltura} placeholder="Ex: 176" />
+            <input  autoComplete='off' id="altura" value={altura} onChange={recebeAltura} placeholder="Ex: 176" />
             <button onClick={funcoesDoBot}>Calcular IMC</button>
             {
                 (msgAlturaErrada || msgPesoErrado) && (
